@@ -1,0 +1,73 @@
+#include <time.h>
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+int roll, rolla[5], i, num, statb[6],acnt = 0, bcnt = 0,j1;
+const char* stat []= {"Str","Dex","Con","Int","Wis","Cha"};
+char* stata[1];
+
+srand( (unsigned)time( NULL ) );
+for(i = 0;i<5;i++)
+{
+    roll= rand() % 20 + 1;
+    rolla[i] = roll;
+    cout<<rolla[i]<<" ";
+    
+}
+cout<<endl;
+
+cout<<"These are the stats to choose from: Str, Dex, Con, Int, Wis, and Cha."<<endl;
+cout<<"Name a stat that you wish to use"<<endl;
+cin>>stata[0];
+
+for(i = 0;i<6 && i != (-1);i++)
+    if(strcmp(stata[0], stat[i]))
+        {
+            j1 = i;
+            i = -2;
+        }    
+ cout<<i<<endl;   
+if (i == 6)
+{
+    cout<<"Sorry please re-enter your stat you wish to use."<<endl;
+    cin>>stata[0];
+    for(i = 0;i<6 && i != (-1);i++)
+        if(strcmp(stata[0], stat[i]))
+            {
+                j1 = i;
+                i = -2;
+            }
+}
+cout<<i<<endl;
+cout<< "Now which number would you like to assign to this stat?"<<endl;
+cin>>num;
+
+for(i = 0;i < 5 && i != (-1);i++)
+    if(num == rolla[i])
+      {
+          statb[j1] = num;
+          i = -2;
+      }
+if (i == 5)
+{
+    cout<<"Sorry please re-enter the number because you used a number that wasn't there."<<endl;
+    cin>>num;
+    for(i = 0;i < 5 && i != (-1);i++)
+        if(num == rolla[i])
+        {
+          statb[j1] = num;
+            i = -2;
+        }
+        
+}
+cout<<statb[j1]<<endl;
+
+//cout<<stat[0]<<" "<<stat[1]<<" "<<stat[2]<<" "<<stat[3]<<" "<<stat[4]<<" "<<stat[5]<<" "<<endl;        
+            
+        
+
+    return 0;
+}
