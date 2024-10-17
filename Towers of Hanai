@@ -1,0 +1,29 @@
+#include <iostream>
+
+int main() 
+{
+int r1 = 1, r2 = 2, r3 = 3, t1 = 6, t2 = 0 t3 = 0; 
+char PR, PT;
+cout<<"welcome to the game of towers and rings!"<<endl;
+cout<<"To play enter which ring to move to which tower."<<endl;
+cout<< "Just remember all the rings need to be moved to the right tower but the larger rings can't go on top of smaller rings."<<endl; 
+cout<<"Alright lets being! Which do you want to enter first?"<<endl;
+cout<<"For the first ring (r1) you have to move it to a different tower first."
+cout<<"Enter the name of the ring and say where you want to move it."<<endl;
+cout<<"r1, r2, r3 for the rings and t1, t2, t3 for the towers."<<endl;
+cin>>PI>>PT;
+if(PI == r2 ||PI == r3)
+    {
+    cout<<"Sorry but I did say you have to move r1 first. So try again!"
+    cin>>PI>>PT;
+    }
+while(t3 =! 6)
+    {
+        if(PT = t2)
+            t2 = 1;
+        else()
+        
+    }
+    
+    return 0;
+}
