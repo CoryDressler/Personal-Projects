@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+int a, b, c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,a1 = 0, a2 = 0;
+const char* alpha[26]= {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"};
+char use[10];
+std::cout<<"enter a word with 10 letters or less"<<std::endl;
+std::cin>>use;
+for(i = 0; i < 100; i++)
+    {
+    if(use[a1] == alpha[a2])
+        {
+            std::cout<<"The letter "<<alpha[a2]<<" is used."<<std::endl;
+            a1++;
+            a2 = 0;
+        }    
+    else
+        a2++;      
+    }
+    return 0;
+}
