@@ -19,5 +19,6 @@ for(i = 0; i < 100; i++)
     else
         a2++;      
     }
+
     return 0;
 }
