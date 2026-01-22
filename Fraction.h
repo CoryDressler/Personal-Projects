@@ -4,7 +4,6 @@ class Fraction{
   int denominator;
 
 public:
-   
    Fraction(int num, int denom);
    Fraction(const Fraction& x);
    int getNumerator() const;
