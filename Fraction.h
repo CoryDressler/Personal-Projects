@@ -16,5 +16,6 @@ public:
    Fraction operator/(Fraction const &x);
    void print() const;
    void simplify();
-   
+
+
 };
